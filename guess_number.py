@@ -6,9 +6,9 @@ while True:
     if number_leader > number_player:
         print('Ваше число меньше того, что загадано')
         number_player = int(input('Попробуй еще раз!'))
-    if number_leader < number_player:
+    elif number_leader < number_player:
         print('Ваше число больше того, что загадано')
         number_player = int(input('Попробуй еще раз!'))
-    if number_player == number_leader:
+    elif number_player == number_leader:
         break
 print('Отличная интуиция! Вы угадали число :)')
